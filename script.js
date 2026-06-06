@@ -3,6 +3,32 @@
    Advanced animations & interactions
 ══════════════════════════════════════════════════════ */
 
+// ── Generate starfield (shown in night mode) ──
+(function makeStars() {
+  const wrap = document.getElementById('stars');
+  if (!wrap) return;
+  const n = window.innerWidth < 600 ? 70 : 130;
+  let html = '';
+  for (let i = 0; i < n; i++) {
+    const x = (Math.random() * 100).toFixed(2);
+    const y = (Math.random() * 100).toFixed(2);
+    const s = (Math.random() * 2 + 1).toFixed(2);
+    const tw = (Math.random() * 3 + 2).toFixed(2);
+    const dl = (Math.random() * 4).toFixed(2);
+    html += `<span class="star" style="left:${x}%;top:${y}%;width:${s}px;height:${s}px;--tw:${tw}s;--dl:${dl}s"></span>`;
+  }
+  wrap.innerHTML = html;
+})();
+
+// ── Day / night toggle (persisted) ──
+const themeToggle = document.getElementById('themeToggle');
+if (themeToggle) {
+  themeToggle.addEventListener('click', () => {
+    const isNight = document.body.classList.toggle('night');
+    try { localStorage.setItem('theme', isNight ? 'night' : 'day'); } catch (e) {}
+  });
+}
+
 // ── Cursor glow follow ──
 const glow = document.getElementById('cursorGlow');
 if (glow && window.innerWidth > 768) {

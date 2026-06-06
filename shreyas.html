@@ -12,6 +12,30 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+<script>(function(){try{if(localStorage.getItem('theme')==='night')document.body.classList.add('night');}catch(e){}})();</script>
+
+<!-- ══ SPACE BACKGROUND (day / night) ══ -->
+<div id="space-bg" aria-hidden="true">
+  <div class="sky"></div>
+  <div class="stars" id="stars"></div>
+  <div class="shooting-star"></div>
+  <div class="celestial">
+    <div class="sun"></div>
+    <div class="moon">
+      <span class="crater crater-1"></span>
+      <span class="crater crater-2"></span>
+      <span class="crater crater-3"></span>
+    </div>
+  </div>
+  <div class="clouds">
+    <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
+    <div class="cloud cloud-3"></div>
+    <div class="cloud cloud-4"></div>
+  </div>
+  <div class="planet planet-1"></div>
+  <div class="planet planet-2"></div>
+</div>
 
 <!-- Cursor glow -->
 <div class="cursor-glow" id="cursorGlow"></div>
@@ -26,9 +50,15 @@
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </div>
-    <button class="nav-toggle" id="navToggle" aria-label="menu">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle day or night mode" title="Toggle day / night">
+        <span class="ti ti-sun">☀</span>
+        <span class="ti ti-moon">☾</span>
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
   <div class="mobile-menu" id="mobileMenu">
     <a href="#about">About</a>
