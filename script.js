@@ -134,36 +134,6 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
   });
 });
 
-// ── Tilt effect on project showcases ──
-if (window.innerWidth > 768) {
-  document.querySelectorAll('.project-showcase, .terminal-card').forEach(card => {
-    card.addEventListener('mousemove', e => {
-      const rect = card.getBoundingClientRect();
-      const x = (e.clientX - rect.left) / rect.width - 0.5;
-      const y = (e.clientY - rect.top) / rect.height - 0.5;
-      card.style.transform = `perspective(800px) rotateY(${x * 4}deg) rotateX(${-y * 4}deg) translateY(-4px)`;
-    });
-    card.addEventListener('mouseleave', () => {
-      card.style.transform = '';
-    });
-  });
-}
-
-// ── Magnetic effect on buttons ──
-if (window.innerWidth > 768) {
-  document.querySelectorAll('.btn').forEach(btn => {
-    btn.addEventListener('mousemove', e => {
-      const rect = btn.getBoundingClientRect();
-      const x = e.clientX - rect.left - rect.width / 2;
-      const y = e.clientY - rect.top - rect.height / 2;
-      btn.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px)`;
-    });
-    btn.addEventListener('mouseleave', () => {
-      btn.style.transform = '';
-    });
-  });
-}
-
 // ── Active nav highlight on scroll ──
 const sections = document.querySelectorAll('section[id]');
 window.addEventListener('scroll', () => {
@@ -175,7 +145,7 @@ window.addEventListener('scroll', () => {
     const link = document.querySelector(`.nav-links a[href="#${id}"]`);
     if (link) {
       if (scrollY >= top && scrollY < top + height) {
-        link.style.color = '#4ECDC4';
+        link.style.color = '#4f46e5';
       } else {
         link.style.color = '';
       }
