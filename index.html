@@ -13,8 +13,8 @@
     html { scroll-behavior: smooth; font-size: 16px; }
     body {
       font-family: 'Inter', sans-serif;
-      background: #050810;
-      color: #e8eaf6;
+      background: #ffffff;
+      color: #1f2937;
       overflow-x: hidden;
     }
     a { color: inherit; text-decoration: none; }
@@ -24,20 +24,20 @@
     :root {
       --gold: #f5c842;
       --gold-dim: #b8912e;
-      --hub-bg: #0a0c14;
+      --hub-bg: #eef1f6;
 
       --jd-cyan: #00d4ff;
       --jd-teal: #00b4d8;
-      --jd-dark: #050f18;
+      --jd-dark: #eef6fc;
 
       --nx-purple: #6366f1;
       --nx-pink: #ec4899;
       --nx-blue: #818cf8;
-      --nx-dark: #0d0818;
+      --nx-dark: #f7f5fc;
 
       --mn-green: #00e5a0;
       --mn-blue: #0099cc;
-      --mn-dark: #030f12;
+      --mn-dark: #edf9f6;
 
       --radius: 20px;
       --radius-sm: 12px;
@@ -45,7 +45,7 @@
 
     /* ─── Scrollbar ─── */
     ::-webkit-scrollbar { width: 6px; }
-    ::-webkit-scrollbar-track { background: #0a0c14; }
+    ::-webkit-scrollbar-track { background: #eef1f6; }
     ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
 
     /* ─── Navigation ─── */
@@ -54,9 +54,9 @@
       display: flex; align-items: center; justify-content: space-between;
       padding: 0 2.5rem;
       height: 68px;
-      background: rgba(5, 8, 16, 0.72);
+      background: rgba(255, 255, 255, 0.82);
       backdrop-filter: blur(20px);
-      border-bottom: 1px solid rgba(245, 200, 66, 0.12);
+      border-bottom: 1px solid rgba(15, 23, 42, 0.08);
     }
     .nav-brand {
       display: flex; align-items: center; gap: 0.75rem;
@@ -84,7 +84,7 @@
       color: rgba(232, 234, 246, 0.7);
       transition: all 0.2s;
     }
-    .nav-links a:hover { color: #fff; background: rgba(255,255,255,0.08); }
+    .nav-links a:hover { color: #0f172a; background: rgba(15,23,42,0.05); }
     .nav-links a.nav-live {
       background: rgba(245, 200, 66, 0.12);
       color: var(--gold);
@@ -107,7 +107,7 @@
       overflow: hidden;
       background: radial-gradient(ellipse at 50% 0%, rgba(245,200,66,0.12) 0%, transparent 60%),
                   radial-gradient(ellipse at 80% 80%, rgba(157,78,221,0.08) 0%, transparent 50%),
-                  #050810;
+                  #ffffff;
     }
     .hero-glow {
       position: absolute;
@@ -147,7 +147,7 @@
       margin: 1.4rem auto 0;
       max-width: 620px;
       font-size: 1.15rem; line-height: 1.75;
-      color: rgba(232,234,246,0.65);
+      color: rgba(15,23,42,0.65);
       opacity: 0; transform: translateY(20px);
       animation: fade-up 0.8s ease 0.75s forwards;
     }
@@ -168,23 +168,23 @@
     .btn:hover { transform: translateY(-3px) scale(1.04); }
     .btn-gold {
       background: linear-gradient(135deg, var(--gold), #ffab00);
-      color: #050810;
+      color: #0b1220;
       box-shadow: 0 12px 32px rgba(245,200,66,0.35);
     }
     .btn-gold:hover { box-shadow: 0 20px 48px rgba(245,200,66,0.55); }
     .btn-outline {
       background: transparent;
-      border: 1.5px solid rgba(232,234,246,0.2);
-      color: rgba(232,234,246,0.8);
+      border: 1.5px solid rgba(15,23,42,0.2);
+      color: rgba(15,23,42,0.8);
     }
-    .btn-outline:hover { border-color: rgba(232,234,246,0.5); color: #fff; background: rgba(255,255,255,0.06); }
+    .btn-outline:hover { border-color: rgba(15,23,42,0.5); color: #0f172a; background: rgba(15,23,42,0.06); }
 
     /* Ecosystem stat strip */
     .hero-stats {
       display: flex; justify-content: center; flex-wrap: wrap; gap: 2.5rem;
       margin-top: 4rem;
       padding-top: 3rem;
-      border-top: 1px solid rgba(255,255,255,0.07);
+      border-top: 1px solid rgba(15,23,42,0.07);
       opacity: 0; transform: translateY(20px);
       animation: fade-up 0.8s ease 1.2s forwards;
     }
@@ -192,17 +192,17 @@
     .hero-stat-num {
       font-family: 'Space Grotesk', sans-serif;
       font-size: 2.2rem; font-weight: 800;
-      background: linear-gradient(135deg, var(--gold), #fff);
+      background: linear-gradient(135deg, #0f172a, #475569);
       -webkit-background-clip: text; -webkit-text-fill-color: transparent;
       background-clip: text;
     }
-    .hero-stat-label { font-size: 0.82rem; color: rgba(232,234,246,0.5); margin-top: 0.25rem; font-weight: 500; }
+    .hero-stat-label { font-size: 0.82rem; color: rgba(15,23,42,0.5); margin-top: 0.25rem; font-weight: 500; }
 
     /* scroll indicator */
     .scroll-indicator {
       position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%);
       display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
-      color: rgba(232,234,246,0.35); font-size: 0.75rem; letter-spacing: 0.1em;
+      color: rgba(15,23,42,0.35); font-size: 0.75rem; letter-spacing: 0.1em;
       animation: bounce-scroll 2.5s ease-in-out infinite;
     }
     .scroll-line {
@@ -235,7 +235,7 @@
       margin-top: 0.75rem;
       max-width: 580px;
       font-size: 1rem; line-height: 1.75;
-      color: rgba(232,234,246,0.6);
+      color: rgba(15,23,42,0.6);
     }
 
     /* ─── Reveal Animation ─── */
@@ -268,7 +268,7 @@
 
     /* ─── Ecosystem Map ─── */
     .ecosystem-section {
-      background: linear-gradient(180deg, #050810 0%, #080b18 100%);
+      background: linear-gradient(180deg, #ffffff 0%, #f3f5f9 100%);
     }
     .ecosystem-grid {
       display: grid;
@@ -280,8 +280,8 @@
       position: relative;
       padding: 1.8rem;
       border-radius: var(--radius);
-      border: 1px solid rgba(255,255,255,0.07);
-      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(15,23,42,0.07);
+      background: rgba(15,23,42,0.03);
       cursor: pointer;
       transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
                   box-shadow 0.3s ease,
@@ -322,7 +322,7 @@
     .eco-card.jobdesk .eco-name { color: var(--jd-cyan); }
     .eco-card.nexora .eco-name { color: var(--nx-purple); }
     .eco-card.medinest .eco-name { color: var(--mn-green); }
-    .eco-desc { margin-top: 0.5rem; font-size: 0.88rem; color: rgba(232,234,246,0.55); line-height: 1.6; }
+    .eco-desc { margin-top: 0.5rem; font-size: 0.88rem; color: rgba(15,23,42,0.55); line-height: 1.6; }
     .eco-link {
       display: inline-flex; align-items: center; gap: 0.4rem;
       margin-top: 1.1rem; font-size: 0.82rem; font-weight: 600;
@@ -338,7 +338,7 @@
 
     /* JobDesk */
     .jobdesk-section {
-      background: linear-gradient(180deg, #060d18 0%, #030a12 100%);
+      background: linear-gradient(180deg, #f4f8fb 0%, #f1f8fc 100%);
       position: relative; overflow: hidden;
     }
     .jobdesk-section::before {
@@ -350,7 +350,7 @@
     }
     .product-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
     .product-tag { background: rgba(0,212,255,0.1); color: var(--jd-cyan); border: 1px solid rgba(0,212,255,0.2); }
-    .product-title-jd { color: #fff; }
+    .product-title-jd { color: #0f172a; }
     .product-title-jd span {
       background: linear-gradient(135deg, var(--jd-cyan), var(--jd-teal));
       -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
@@ -373,15 +373,15 @@
     .dot-nx { background: var(--nx-purple); box-shadow: 0 0 8px var(--nx-purple); }
     .dot-mn { background: var(--mn-green); box-shadow: 0 0 8px var(--mn-green); }
     .dot-hub { background: var(--gold); box-shadow: 0 0 8px var(--gold); }
-    .feature-text { font-size: 0.9rem; color: rgba(232,234,246,0.75); line-height: 1.5; }
-    .feature-text strong { color: #fff; font-weight: 600; }
+    .feature-text { font-size: 0.9rem; color: rgba(15,23,42,0.75); line-height: 1.5; }
+    .feature-text strong { color: #0f172a; font-weight: 600; }
 
     .product-visual {
       position: relative;
     }
     .product-card-mock {
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(15,23,42,0.03);
+      border: 1px solid rgba(15,23,42,0.08);
       border-radius: var(--radius);
       padding: 1.8rem;
       position: relative; overflow: hidden;
@@ -410,7 +410,7 @@
     .mock-kpi-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.6rem; margin-top: 0.8rem; }
     .mock-kpi {
       padding: 0.7rem; border-radius: var(--radius-sm);
-      border: 1px solid rgba(255,255,255,0.06);
+      border: 1px solid rgba(15,23,42,0.06);
     }
     .mock-kpi-v { font-size: 1.1rem; font-weight: 700; }
     .mock-kpi-l { font-size: 0.7rem; opacity: 0.45; margin-top: 0.15rem; }
@@ -420,7 +420,7 @@
       padding: 0.38rem 0.8rem;
       border-radius: 999px;
       font-size: 0.78rem; font-weight: 600;
-      border: 1px solid rgba(255,255,255,0.1);
+      border: 1px solid rgba(15,23,42,0.1);
     }
     .chip-jd { background: rgba(0,212,255,0.08); color: var(--jd-cyan); border-color: rgba(0,212,255,0.2); }
     .chip-nx { background: rgba(99,102,241,0.08); color: var(--nx-purple); border-color: rgba(99,102,241,0.2); }
@@ -430,7 +430,7 @@
     .product-links { display: flex; gap: 0.9rem; flex-wrap: wrap; margin-top: 2rem; }
     .btn-jd {
       background: linear-gradient(135deg, var(--jd-cyan), var(--jd-teal));
-      color: #050810; box-shadow: 0 10px 28px rgba(0,212,255,0.3);
+      color: #0b1220; box-shadow: 0 10px 28px rgba(0,212,255,0.3);
     }
     .btn-jd:hover { box-shadow: 0 18px 44px rgba(0,212,255,0.5); }
     .btn-nx {
@@ -440,18 +440,18 @@
     .btn-nx:hover { box-shadow: 0 18px 44px rgba(99,102,241,0.55); }
     .btn-mn {
       background: linear-gradient(135deg, var(--mn-green), var(--mn-blue));
-      color: #050810; box-shadow: 0 10px 28px rgba(0,229,160,0.3);
+      color: #0b1220; box-shadow: 0 10px 28px rgba(0,229,160,0.3);
     }
     .btn-mn:hover { box-shadow: 0 18px 44px rgba(0,229,160,0.5); }
     .btn-hub {
       background: linear-gradient(135deg, var(--gold), #ffab00);
-      color: #050810; box-shadow: 0 10px 28px rgba(245,200,66,0.3);
+      color: #0b1220; box-shadow: 0 10px 28px rgba(245,200,66,0.3);
     }
     .btn-hub:hover { box-shadow: 0 18px 44px rgba(245,200,66,0.5); }
 
     /* Nexora */
     .nexora-section {
-      background: linear-gradient(180deg, #060818 0%, #0a0d22 100%);
+      background: linear-gradient(180deg, #f6f5fd 0%, #f2f4fc 100%);
       position: relative; overflow: hidden;
     }
     .nexora-section::before {
@@ -506,14 +506,14 @@
       font-size: 0.75rem; font-weight: 700;
     }
     .social-name { font-size: 0.85rem; font-weight: 600; }
-    .social-time { font-size: 0.72rem; color: rgba(232,234,246,0.4); margin-left: auto; }
-    .social-body { font-size: 0.82rem; color: rgba(232,234,246,0.65); line-height: 1.5; }
+    .social-time { font-size: 0.72rem; color: rgba(15,23,42,0.4); margin-left: auto; }
+    .social-body { font-size: 0.82rem; color: rgba(15,23,42,0.65); line-height: 1.5; }
     .social-actions { display: flex; gap: 1rem; margin-top: 0.6rem; }
-    .social-action { font-size: 0.75rem; color: rgba(232,234,246,0.4); display: flex; align-items: center; gap: 0.3rem; }
+    .social-action { font-size: 0.75rem; color: rgba(15,23,42,0.4); display: flex; align-items: center; gap: 0.3rem; }
 
     /* MediNest */
     .medinest-section {
-      background: linear-gradient(180deg, #020c0f 0%, #030c10 100%);
+      background: linear-gradient(180deg, #edf9f6 0%, #eff9f6 100%);
       position: relative; overflow: hidden;
     }
     .medinest-section::before {
@@ -540,7 +540,7 @@
       border-radius: var(--radius-sm);
       background: rgba(0,229,160,0.06);
       border: 1px solid rgba(0,229,160,0.1);
-      font-size: 0.78rem; color: rgba(232,234,246,0.7);
+      font-size: 0.78rem; color: rgba(15,23,42,0.7);
       transition: all 0.2s;
     }
     .module-chip:hover { background: rgba(0,229,160,0.14); border-color: rgba(0,229,160,0.25); color: var(--mn-green); }
@@ -548,7 +548,7 @@
 
     /* Hub section */
     .hub-section {
-      background: linear-gradient(180deg, #05060e 0%, #080a16 100%);
+      background: linear-gradient(180deg, #fafbfd 0%, #f3f5f9 100%);
       position: relative; overflow: hidden;
     }
     .hub-section::before {
@@ -587,11 +587,11 @@
       font-size: 0.7rem; font-weight: 700;
       background: rgba(245,200,66,0.15); color: var(--gold);
     }
-    .route-path { color: rgba(232,234,246,0.75); }
-    .route-label { margin-left: auto; font-size: 0.72rem; color: rgba(232,234,246,0.4); font-family: 'Inter', sans-serif; }
+    .route-path { color: rgba(15,23,42,0.75); }
+    .route-label { margin-left: auto; font-size: 0.72rem; color: rgba(15,23,42,0.4); font-family: 'Inter', sans-serif; }
 
     /* ─── Tech Stack Section ─── */
-    .techstack-section { background: #050810; }
+    .techstack-section { background: #ffffff; }
     .stack-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
@@ -600,20 +600,20 @@
     .stack-card {
       padding: 1.4rem 1rem;
       border-radius: var(--radius);
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.07);
+      background: rgba(15,23,42,0.03);
+      border: 1px solid rgba(15,23,42,0.07);
       text-align: center;
       transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
       cursor: default;
     }
-    .stack-card:hover { transform: translateY(-6px); background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.15); }
+    .stack-card:hover { transform: translateY(-6px); background: rgba(15,23,42,0.06); border-color: rgba(15,23,42,0.15); }
     .stack-icon { font-size: 1.8rem; margin-bottom: 0.6rem; }
     .stack-name { font-size: 0.85rem; font-weight: 600; }
-    .stack-sub { font-size: 0.72rem; color: rgba(232,234,246,0.4); margin-top: 0.2rem; }
+    .stack-sub { font-size: 0.72rem; color: rgba(15,23,42,0.4); margin-top: 0.2rem; }
 
     /* ─── About Section ─── */
     .about-section {
-      background: linear-gradient(180deg, #060810 0%, #050810 100%);
+      background: linear-gradient(180deg, #fbfcfe 0%, #ffffff 100%);
       position: relative; overflow: hidden;
     }
     .about-section::before {
@@ -626,7 +626,7 @@
     .about-hero {
       text-align: center;
       padding-bottom: 4rem;
-      border-bottom: 1px solid rgba(255,255,255,0.06);
+      border-bottom: 1px solid rgba(15,23,42,0.06);
       margin-bottom: 4rem;
     }
     .about-avatar-wrap {
@@ -659,17 +659,17 @@
       background: linear-gradient(135deg, var(--gold), #ffab00);
       display: grid; place-items: center;
       font-size: 2.4rem; font-weight: 800;
-      color: #050810;
+      color: #0b1220;
       box-shadow: 0 20px 50px rgba(245,200,66,0.3);
     }
     .about-name {
       font-family: 'Space Grotesk', sans-serif;
       font-size: 2.6rem; font-weight: 800; letter-spacing: -0.04em;
-      background: linear-gradient(135deg, #fff, rgba(232,234,246,0.75));
+      background: linear-gradient(135deg, #0f172a, rgba(15,23,42,0.6));
       -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
     }
     .about-role { font-size: 1rem; color: var(--gold); font-weight: 600; margin-top: 0.4rem; }
-    .about-bio { margin: 1rem auto 0; max-width: 620px; font-size: 0.95rem; line-height: 1.8; color: rgba(232,234,246,0.6); }
+    .about-bio { margin: 1rem auto 0; max-width: 620px; font-size: 0.95rem; line-height: 1.8; color: rgba(15,23,42,0.6); }
     .about-traits {
       display: flex; justify-content: center; flex-wrap: wrap; gap: 0.6rem;
       margin-top: 1.5rem;
@@ -680,10 +680,10 @@
       font-size: 0.82rem; font-weight: 600;
       background: rgba(245,200,66,0.08);
       border: 1px solid rgba(245,200,66,0.18);
-      color: rgba(232,234,246,0.75);
+      color: rgba(15,23,42,0.75);
       transition: all 0.2s;
     }
-    .about-trait:hover { background: rgba(245,200,66,0.15); color: #fff; }
+    .about-trait:hover { background: rgba(245,200,66,0.18); color: #0f172a; }
     .about-links { display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.8rem; }
     .about-link {
       display: inline-flex; align-items: center; gap: 0.45rem;
@@ -697,7 +697,7 @@
     .about-link:hover { background: rgba(245,200,66,0.1); border-color: rgba(245,200,66,0.5); }
     .about-link.primary {
       background: linear-gradient(135deg, var(--gold), #ffab00);
-      color: #050810; border-color: transparent;
+      color: #0b1220; border-color: transparent;
       box-shadow: 0 8px 24px rgba(245,200,66,0.3);
     }
     .about-link.primary:hover { box-shadow: 0 14px 36px rgba(245,200,66,0.5); }
@@ -708,27 +708,27 @@
     .about-card {
       padding: 1.8rem;
       border-radius: var(--radius);
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.07);
+      background: rgba(15,23,42,0.03);
+      border: 1px solid rgba(15,23,42,0.07);
     }
     .about-card-title {
       font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em;
-      text-transform: uppercase; color: rgba(232,234,246,0.4);
+      text-transform: uppercase; color: rgba(15,23,42,0.4);
       margin-bottom: 1.2rem;
     }
     .about-facts { display: grid; gap: 0.7rem; }
     .about-fact {
       display: flex; align-items: flex-start; gap: 0.7rem;
-      font-size: 0.88rem; color: rgba(232,234,246,0.7);
+      font-size: 0.88rem; color: rgba(15,23,42,0.7);
       padding: 0.65rem 0.8rem;
       border-radius: var(--radius-sm);
-      background: rgba(255,255,255,0.025);
-      border: 1px solid rgba(255,255,255,0.05);
+      background: rgba(15,23,42,0.025);
+      border: 1px solid rgba(15,23,42,0.05);
       transition: border-color 0.2s;
     }
     .about-fact:hover { border-color: rgba(245,200,66,0.2); }
     .about-fact-icon { font-size: 1rem; flex-shrink: 0; }
-    .about-fact strong { display: block; font-size: 0.78rem; color: rgba(232,234,246,0.4); font-weight: 500; margin-bottom: 0.1rem; }
+    .about-fact strong { display: block; font-size: 0.78rem; color: rgba(15,23,42,0.4); font-weight: 500; margin-bottom: 0.1rem; }
 
     /* Skill bars */
     .skill-bars { display: grid; gap: 0.9rem; }
@@ -737,7 +737,7 @@
     .skill-bar-pct { font-size: 0.78rem; color: var(--gold); font-weight: 700; }
     .skill-bar-track {
       height: 6px; border-radius: 999px;
-      background: rgba(255,255,255,0.07);
+      background: rgba(15,23,42,0.07);
       overflow: hidden;
     }
     .skill-bar-fill {
@@ -777,20 +777,20 @@
     .badge-exp { background: rgba(245,200,66,0.12); color: var(--gold); }
     .badge-edu { background: rgba(0,212,255,0.1); color: var(--jd-cyan); }
     .badge-proj { background: rgba(0,229,160,0.1); color: var(--mn-green); }
-    .timeline-role { font-weight: 700; font-size: 0.95rem; color: #fff; }
-    .timeline-company { font-size: 0.85rem; color: rgba(232,234,246,0.55); margin-top: 0.1rem; }
-    .timeline-period { font-size: 0.75rem; color: rgba(232,234,246,0.35); margin-top: 0.1rem; }
-    .timeline-note { font-size: 0.82rem; color: rgba(232,234,246,0.5); line-height: 1.55; margin-top: 0.5rem; }
+    .timeline-role { font-weight: 700; font-size: 0.95rem; color: #0f172a; }
+    .timeline-company { font-size: 0.85rem; color: rgba(15,23,42,0.55); margin-top: 0.1rem; }
+    .timeline-period { font-size: 0.75rem; color: rgba(15,23,42,0.35); margin-top: 0.1rem; }
+    .timeline-note { font-size: 0.82rem; color: rgba(15,23,42,0.5); line-height: 1.55; margin-top: 0.5rem; }
     .timeline-bullets { margin: 0.4rem 0 0; padding-left: 1.1rem; display: grid; gap: 0.2rem; }
-    .timeline-bullets li { font-size: 0.8rem; color: rgba(232,234,246,0.5); line-height: 1.5; }
+    .timeline-bullets li { font-size: 0.8rem; color: rgba(15,23,42,0.5); line-height: 1.5; }
 
     @media (max-width: 1100px) { .about-body { grid-template-columns: 1fr 1fr; } }
     @media (max-width: 720px) { .about-body { grid-template-columns: 1fr; } }
 
     /* ─── Footer ─── */
     .footer {
-      background: #040609;
-      border-top: 1px solid rgba(255,255,255,0.06);
+      background: #f6f8fa;
+      border-top: 1px solid rgba(15,23,42,0.06);
       padding: 3.5rem 2rem;
     }
     .footer-inner {
@@ -805,18 +805,18 @@
       -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
       margin-top: 0.8rem;
     }
-    .footer-brand-desc { font-size: 0.85rem; color: rgba(232,234,246,0.45); line-height: 1.65; margin-top: 0.6rem; }
-    .footer-col-title { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(232,234,246,0.5); margin-bottom: 1rem; }
+    .footer-brand-desc { font-size: 0.85rem; color: rgba(15,23,42,0.45); line-height: 1.65; margin-top: 0.6rem; }
+    .footer-col-title { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(15,23,42,0.5); margin-bottom: 1rem; }
     .footer-links { display: grid; gap: 0.55rem; }
-    .footer-links a { font-size: 0.88rem; color: rgba(232,234,246,0.55); transition: color 0.2s; }
-    .footer-links a:hover { color: #fff; }
+    .footer-links a { font-size: 0.88rem; color: rgba(15,23,42,0.55); transition: color 0.2s; }
+    .footer-links a:hover { color: #0f172a; }
     .footer-bottom {
       max-width: 1200px; margin: 2.5rem auto 0;
       padding-top: 1.8rem;
-      border-top: 1px solid rgba(255,255,255,0.05);
+      border-top: 1px solid rgba(15,23,42,0.05);
       display: flex; justify-content: space-between; align-items: center;
       flex-wrap: wrap; gap: 1rem;
-      font-size: 0.82rem; color: rgba(232,234,246,0.35);
+      font-size: 0.82rem; color: rgba(15,23,42,0.35);
     }
     .footer-bottom a { color: var(--gold); transition: opacity 0.2s; }
     .footer-bottom a:hover { opacity: 0.7; }
@@ -831,7 +831,7 @@
     /* ─── Divider ─── */
     .section-divider {
       height: 1px;
-      background: linear-gradient(to right, transparent, rgba(255,255,255,0.06), transparent);
+      background: linear-gradient(to right, transparent, rgba(15,23,42,0.06), transparent);
     }
 
     /* ─── Advanced Animations ─── */
@@ -974,6 +974,16 @@
       .hero-stats { gap: 1.5rem; }
       .ecosystem-grid { grid-template-columns: 1fr; }
     }
+
+    /* ─── Light theme card polish ─── */
+    .eco-card, .stack-card, .about-card {
+      background: #fff !important;
+      box-shadow: 0 1px 3px rgba(15,23,42,.05), 0 10px 30px rgba(15,23,42,.05);
+    }
+    .product-card-mock {
+      background: #fff !important;
+      box-shadow: 0 1px 3px rgba(15,23,42,.06), 0 18px 50px rgba(15,23,42,.08);
+    }
   </style>
 </head>
 <body>
@@ -1007,7 +1017,7 @@
     </div>
     <h1 class="hero-title">
       <span class="crown-word">Crown</span>Desk<br>
-      <span style="font-size:0.55em; color:rgba(232,234,246,0.5); font-weight:400; -webkit-text-fill-color:rgba(232,234,246,0.5);" id="typewriter-line"></span>
+      <span style="font-size:0.55em; color:rgba(15,23,42,0.5); font-weight:400; -webkit-text-fill-color:rgba(15,23,42,0.5);" id="typewriter-line"></span>
     </h1>
     <p class="hero-sub">
       A unified ecosystem of four production-ready web applications built for real users — career seekers, social networkers, medical students, and enterprise operators.
@@ -1183,8 +1193,8 @@
     <div class="product-layout" style="direction:rtl">
       <div class="reveal-right" style="direction:ltr">
         <span class="section-tag product-tag-nx">🌍 Nexora</span>
-        <h2 class="section-title"><span class="product-title-nx" style="color:#fff"><span>Student Community</span><br>Powered by AI</span></h2>
-        <p class="section-desc" style="color:rgba(232,234,246,0.6)">The social heart of CrownDesk — a networking platform built for international students in Germany. Find communities, attend events, get AI coaching, and connect with peers who understand your journey.</p>
+        <h2 class="section-title"><span class="product-title-nx" style="color:#0f172a"><span>Student Community</span><br>Powered by AI</span></h2>
+        <p class="section-desc" style="color:rgba(15,23,42,0.6)">The social heart of CrownDesk — a networking platform built for international students in Germany. Find communities, attend events, get AI coaching, and connect with peers who understand your journey.</p>
         <div class="feature-list">
           <div class="feature-item feature-item-nx">
             <div class="feature-dot dot-nx"></div>
@@ -1238,15 +1248,15 @@
           <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.5rem;margin-bottom:0.75rem">
             <div style="padding:0.6rem;background:rgba(99,102,241,0.08);border:1px solid rgba(99,102,241,0.15);border-radius:10px;text-align:center">
               <div style="font-size:1.1rem;font-weight:800;color:var(--nx-purple)">847</div>
-              <div style="font-size:0.65rem;color:rgba(232,234,246,0.4)">Students</div>
+              <div style="font-size:0.65rem;color:rgba(15,23,42,0.4)">Students</div>
             </div>
             <div style="padding:0.6rem;background:rgba(236,72,153,0.08);border:1px solid rgba(236,72,153,0.15);border-radius:10px;text-align:center">
               <div style="font-size:1.1rem;font-weight:800;color:var(--nx-pink)">23</div>
-              <div style="font-size:0.65rem;color:rgba(232,234,246,0.4)">Communities</div>
+              <div style="font-size:0.65rem;color:rgba(15,23,42,0.4)">Communities</div>
             </div>
             <div style="padding:0.6rem;background:rgba(129,140,248,0.08);border:1px solid rgba(129,140,248,0.15);border-radius:10px;text-align:center">
               <div style="font-size:1.1rem;font-weight:800;color:var(--nx-blue)">12</div>
-              <div style="font-size:0.65rem;color:rgba(232,234,246,0.4)">Events</div>
+              <div style="font-size:0.65rem;color:rgba(15,23,42,0.4)">Events</div>
             </div>
           </div>
           <div class="social-mock">
@@ -1281,7 +1291,7 @@
             </div>
             <div class="social-post" style="background:rgba(99,102,241,0.1);border-color:rgba(99,102,241,0.2)">
               <div class="social-post-header">
-                <div class="social-avatar" style="background:linear-gradient(135deg,var(--gold),#ffab00);color:#050810">SN</div>
+                <div class="social-avatar" style="background:linear-gradient(135deg,var(--gold),#ffab00);color:#0b1220">SN</div>
                 <div>
                   <div class="social-name" style="color:var(--gold)">Shreyas N. 👑</div>
                 </div>
@@ -1309,7 +1319,7 @@
     <div class="product-layout">
       <div class="reveal-left">
         <span class="section-tag product-tag-mn">🏥 MediNest</span>
-        <h2 class="section-title"><span style="color:#fff"><span class="product-title-mn" style="color:#fff"><span>AI-Powered Medical</span><br><span style="background:linear-gradient(135deg,var(--mn-green),var(--mn-blue));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Platform</span></span></span></h2>
+        <h2 class="section-title"><span style="color:#0f172a"><span class="product-title-mn" style="color:#0f172a"><span>AI-Powered Medical</span><br><span style="background:linear-gradient(135deg,var(--mn-green),var(--mn-blue));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Platform</span></span></span></h2>
         <p class="section-desc">Universal medical platform for students and professionals with 15 AI modules — built on FastAPI + Next.js with Claude AI, DeepL, PubMed, and 3D anatomy visualisation.</p>
         <div class="feature-list">
           <div class="feature-item feature-item-mn">
@@ -1330,7 +1340,7 @@
           </div>
         </div>
         <div style="margin-top:1.5rem">
-          <p style="font-size:0.8rem;font-weight:700;letter-spacing:0.08em;color:rgba(232,234,246,0.4);text-transform:uppercase;margin-bottom:0.8rem">15 Modules</p>
+          <p style="font-size:0.8rem;font-weight:700;letter-spacing:0.08em;color:rgba(15,23,42,0.4);text-transform:uppercase;margin-bottom:0.8rem">15 Modules</p>
           <div class="modules-grid">
             <div class="module-chip"><span>👑</span> Crown AI</div>
             <div class="module-chip"><span>🏥</span> Case Sim</div>
@@ -1372,26 +1382,26 @@
           </div>
           <div style="padding:0.8rem;background:rgba(0,229,160,0.05);border:1px solid rgba(0,229,160,0.1);border-radius:12px;margin-bottom:0.75rem">
             <div style="font-size:0.75rem;color:var(--mn-green);font-weight:600;margin-bottom:0.5rem">🩺 Patient Query</div>
-            <div style="font-size:0.82rem;color:rgba(232,234,246,0.7)">Patient presents with chest pain, 38°C fever, and SpO2 at 94%. Differential?</div>
+            <div style="font-size:0.82rem;color:rgba(15,23,42,0.7)">Patient presents with chest pain, 38°C fever, and SpO2 at 94%. Differential?</div>
           </div>
           <div style="padding:0.8rem;background:rgba(0,153,204,0.06);border:1px solid rgba(0,153,204,0.12);border-radius:12px">
             <div style="font-size:0.75rem;color:var(--mn-blue);font-weight:600;margin-bottom:0.5rem">👑 Crown Intelligence</div>
-            <div style="font-size:0.82rem;color:rgba(232,234,246,0.65);line-height:1.55">
+            <div style="font-size:0.82rem;color:rgba(15,23,42,0.65);line-height:1.55">
               <strong style="color:var(--mn-green)">Top differentials:</strong><br>
               1. Pneumonia (fever + low SpO2 + chest pain)<br>
               2. Pulmonary Embolism (PE)<br>
               3. Pleuritis<br>
-              <em style="color:rgba(232,234,246,0.4);font-size:0.75rem">Recommend CXR, D-dimer, CBC, CRP →</em>
+              <em style="color:rgba(15,23,42,0.4);font-size:0.75rem">Recommend CXR, D-dimer, CBC, CRP →</em>
             </div>
           </div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;margin-top:0.75rem">
             <div style="padding:0.6rem;background:rgba(0,229,160,0.06);border:1px solid rgba(0,229,160,0.1);border-radius:10px;text-align:center">
               <div style="font-size:1rem;font-weight:700;color:var(--mn-green)">3D</div>
-              <div style="font-size:0.7rem;color:rgba(232,234,246,0.4)">Anatomy view</div>
+              <div style="font-size:0.7rem;color:rgba(15,23,42,0.4)">Anatomy view</div>
             </div>
             <div style="padding:0.6rem;background:rgba(0,229,160,0.06);border:1px solid rgba(0,229,160,0.1);border-radius:10px;text-align:center">
               <div style="font-size:1rem;font-weight:700;color:var(--mn-green)">PDF</div>
-              <div style="font-size:0.7rem;color:rgba(232,234,246,0.4)">Portfolio export</div>
+              <div style="font-size:0.7rem;color:rgba(15,23,42,0.4)">Portfolio export</div>
             </div>
           </div>
         </div>
@@ -1408,7 +1418,7 @@
     <div class="product-layout" style="direction:rtl">
       <div class="reveal-right" style="direction:ltr">
         <span class="section-tag product-tag-hub">👑 CrownDesk Hub</span>
-        <h2 class="section-title"><span style="color:#fff">The <span style="background:linear-gradient(135deg,var(--gold),#ffab00);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Ecosystem Gateway</span></span></h2>
+        <h2 class="section-title"><span style="color:#0f172a">The <span style="background:linear-gradient(135deg,var(--gold),#ffab00);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Ecosystem Gateway</span></span></h2>
         <p class="section-desc">The master hub that powers the entire ecosystem — a Flask proxy layer routing all traffic under one custom domain with a centralised super-admin panel.</p>
         <div class="feature-list">
           <div class="feature-item feature-item-hub">
@@ -1429,7 +1439,7 @@
           </div>
         </div>
         <div style="margin-top:1.5rem">
-          <p style="font-size:0.8rem;font-weight:700;letter-spacing:0.08em;color:rgba(232,234,246,0.4);text-transform:uppercase;margin-bottom:0.8rem">Live Routes</p>
+          <p style="font-size:0.8rem;font-weight:700;letter-spacing:0.08em;color:rgba(15,23,42,0.4);text-transform:uppercase;margin-bottom:0.8rem">Live Routes</p>
           <div class="routes-grid">
             <a href="https://crowndeskhub.com" target="_blank" class="route-item" style="text-decoration:none">
               <span class="route-method">GET</span>
@@ -1474,7 +1484,7 @@
           <div style="text-align:center;padding:1.5rem 0">
             <div style="font-size:3rem">👑</div>
             <div style="font-family:'Space Grotesk',sans-serif;font-size:1.4rem;font-weight:800;background:linear-gradient(135deg,var(--gold),#ffab00);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-top:0.5rem">CrownDesk</div>
-            <div style="font-size:0.8rem;color:rgba(232,234,246,0.4);margin-top:0.3rem">Ecosystem Hub</div>
+            <div style="font-size:0.8rem;color:rgba(15,23,42,0.4);margin-top:0.3rem">Ecosystem Hub</div>
           </div>
           <div style="display:grid;gap:0.5rem">
             <div style="display:flex;align-items:center;gap:0.75rem;padding:0.7rem;background:rgba(0,212,255,0.06);border:1px solid rgba(0,212,255,0.12);border-radius:10px">
@@ -1493,7 +1503,7 @@
               <span style="margin-left:auto;width:8px;height:8px;border-radius:50%;background:#28c840;box-shadow:0 0 6px #28c840"></span>
             </div>
           </div>
-          <div style="margin-top:0.75rem;padding:0.7rem;background:rgba(245,200,66,0.06);border:1px solid rgba(245,200,66,0.12);border-radius:10px;font-size:0.78rem;color:rgba(232,234,246,0.5);text-align:center">
+          <div style="margin-top:0.75rem;padding:0.7rem;background:rgba(245,200,66,0.06);border:1px solid rgba(245,200,66,0.12);border-radius:10px;font-size:0.78rem;color:rgba(15,23,42,0.5);text-align:center">
             🟢 All services operational · crowndeskhub.com
           </div>
         </div>
@@ -1508,7 +1518,7 @@
 <section class="section techstack-section" id="stack">
   <div class="section-inner">
     <div class="reveal" style="text-align:center">
-      <span class="section-tag" style="background:rgba(232,234,246,0.06);color:rgba(232,234,246,0.6);border:1px solid rgba(255,255,255,0.1)">Tech Stack</span>
+      <span class="section-tag" style="background:rgba(15,23,42,0.06);color:rgba(15,23,42,0.6);border:1px solid rgba(15,23,42,0.1)">Tech Stack</span>
       <h2 class="section-title" style="text-align:center">Built with modern tools</h2>
       <p class="section-desc" style="margin:0.75rem auto 0;text-align:center">Technologies powering the CrownDesk ecosystem across all four applications.</p>
     </div>
@@ -1628,7 +1638,7 @@
             </div>
             <div class="skill-bar-item">
               <div class="skill-bar-header"><span class="skill-bar-name">Docker · Render · Deploy</span><span class="skill-bar-pct">65%</span></div>
-              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="65" style="background:linear-gradient(90deg,rgba(232,234,246,0.6),rgba(232,234,246,0.3))"></div></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="65" style="background:linear-gradient(90deg,rgba(15,23,42,0.6),rgba(15,23,42,0.3))"></div></div>
             </div>
           </div>
         </div>
@@ -1704,19 +1714,19 @@
           <div style="display:grid;gap:0.7rem">
             <div style="padding:0.9rem;border-radius:var(--radius-sm);background:rgba(0,212,255,0.05);border:1px solid rgba(0,212,255,0.1)">
               <div style="font-weight:700;font-size:0.9rem;margin-bottom:0.3rem">⚛️ React · TypeScript · Next.js</div>
-              <div style="font-size:0.82rem;color:rgba(232,234,246,0.55);line-height:1.5">Built production UIs with React/Next.js and TypeScript — component architecture, hooks, and type-safe data flows.</div>
+              <div style="font-size:0.82rem;color:rgba(15,23,42,0.55);line-height:1.5">Built production UIs with React/Next.js and TypeScript — component architecture, hooks, and type-safe data flows.</div>
             </div>
             <div style="padding:0.9rem;border-radius:var(--radius-sm);background:rgba(245,200,66,0.05);border:1px solid rgba(245,200,66,0.1)">
               <div style="font-weight:700;font-size:0.9rem;margin-bottom:0.3rem">🏗️ Micro-Frontend Mindset</div>
-              <div style="font-size:0.82rem;color:rgba(232,234,246,0.55);line-height:1.5">CrownDesk is structured as independently-deployable apps under one gateway — the same pattern as micro-frontends.</div>
+              <div style="font-size:0.82rem;color:rgba(15,23,42,0.55);line-height:1.5">CrownDesk is structured as independently-deployable apps under one gateway — the same pattern as micro-frontends.</div>
             </div>
             <div style="padding:0.9rem;border-radius:var(--radius-sm);background:rgba(157,78,221,0.05);border:1px solid rgba(157,78,221,0.1)">
               <div style="font-weight:700;font-size:0.9rem;margin-bottom:0.3rem">🔁 GitHub · CI/CD</div>
-              <div style="font-size:0.82rem;color:rgba(232,234,246,0.55);line-height:1.5">Version control via GitHub, automated deploys with Render's CI/CD pipeline — every push ships to production.</div>
+              <div style="font-size:0.82rem;color:rgba(15,23,42,0.55);line-height:1.5">Version control via GitHub, automated deploys with Render's CI/CD pipeline — every push ships to production.</div>
             </div>
             <div style="padding:0.9rem;border-radius:var(--radius-sm);background:rgba(0,229,160,0.05);border:1px solid rgba(0,229,160,0.1)">
               <div style="font-weight:700;font-size:0.9rem;margin-bottom:0.3rem">🤖 AI Integration</div>
-              <div style="font-size:0.82rem;color:rgba(232,234,246,0.55);line-height:1.5">Hands-on experience integrating Claude AI and Groq into production web apps with real user-facing features.</div>
+              <div style="font-size:0.82rem;color:rgba(15,23,42,0.55);line-height:1.5">Hands-on experience integrating Claude AI and Groq into production web apps with real user-facing features.</div>
             </div>
           </div>
         </div>
@@ -1724,19 +1734,19 @@
         <div style="margin-top:1.2rem;display:grid;grid-template-columns:repeat(2,1fr);gap:0.75rem">
           <div style="padding:1.2rem;border-radius:var(--radius-sm);background:rgba(245,200,66,0.06);border:1px solid rgba(245,200,66,0.12);text-align:center">
             <div style="font-size:1.8rem;font-weight:800;color:var(--gold)">4</div>
-            <div style="font-size:0.72rem;color:rgba(232,234,246,0.45);margin-top:0.2rem">Apps built</div>
+            <div style="font-size:0.72rem;color:rgba(15,23,42,0.45);margin-top:0.2rem">Apps built</div>
           </div>
           <div style="padding:1.2rem;border-radius:var(--radius-sm);background:rgba(0,229,160,0.06);border:1px solid rgba(0,229,160,0.12);text-align:center">
             <div style="font-size:1.8rem;font-weight:800;color:var(--mn-green)">15+</div>
-            <div style="font-size:0.72rem;color:rgba(232,234,246,0.45);margin-top:0.2rem">AI modules</div>
+            <div style="font-size:0.72rem;color:rgba(15,23,42,0.45);margin-top:0.2rem">AI modules</div>
           </div>
           <div style="padding:1.2rem;border-radius:var(--radius-sm);background:rgba(0,212,255,0.06);border:1px solid rgba(0,212,255,0.12);text-align:center">
             <div style="font-size:1.8rem;font-weight:800;color:var(--jd-cyan)">1</div>
-            <div style="font-size:0.72rem;color:rgba(232,234,246,0.45);margin-top:0.2rem">Live domain</div>
+            <div style="font-size:0.72rem;color:rgba(15,23,42,0.45);margin-top:0.2rem">Live domain</div>
           </div>
           <div style="padding:1.2rem;border-radius:var(--radius-sm);background:rgba(157,78,221,0.06);border:1px solid rgba(157,78,221,0.12);text-align:center">
             <div style="font-size:1.8rem;font-weight:800;color:var(--nx-purple)">50+</div>
-            <div style="font-size:0.72rem;color:rgba(232,234,246,0.45);margin-top:0.2rem">Features shipped</div>
+            <div style="font-size:0.72rem;color:rgba(15,23,42,0.45);margin-top:0.2rem">Features shipped</div>
           </div>
         </div>
       </div>
@@ -2000,8 +2010,8 @@
     let current = '';
     sections.forEach(s => { if (window.scrollY >= s.offsetTop - 100) current = s.id; });
     navLinks.forEach(a => {
-      a.style.color = a.getAttribute('href') === '#' + current ? '#fff' : '';
-      a.style.background = a.getAttribute('href') === '#' + current ? 'rgba(255,255,255,0.1)' : '';
+      a.style.color = a.getAttribute('href') === '#' + current ? '#0f172a' : '';
+      a.style.background = a.getAttribute('href') === '#' + current ? 'rgba(15,23,42,0.08)' : '';
     });
   });
 
