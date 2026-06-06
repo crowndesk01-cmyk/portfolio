@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shreyas Nandi — Frontend Developer · München</title>
+  <meta name="description" content="Shreyas Nandi — Frontend & Full-Stack Developer based in Munich. React, TypeScript, Next.js, Python. M.Sc. student at FOM Hochschule. Open to working student roles." />
+  <meta name="author" content="Shreyas Nandi" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Cursor glow -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- ══ NAVBAR ══ -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo"><span class="logo-bracket">[</span>SN<span class="logo-bracket">]</span></a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section id="hero">
+  <div class="hero-bg">
+    <div class="hero-grid"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+    <div class="hero-glow-line"></div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      Available for Working Student Roles · München
+    </div>
+
+    <h1 class="hero-title">
+      <span class="hero-line hero-line-1">Hi, I'm</span>
+      <span class="hero-line hero-line-2 gradient-text">Shreyas Nandi</span>
+      <span class="hero-line hero-line-3">Frontend Developer</span>
+    </h1>
+
+    <p class="hero-subtitle">
+      M.Sc. student at FOM Hochschule München · Building production web apps with
+      <strong>React</strong>, <strong>TypeScript</strong> & <strong>Python</strong>.
+      From component design to CI/CD deployment — I ship complete, working products.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="https://github.com/crowndesk01-cmyk" target="_blank" rel="noopener" class="btn btn-glass">GitHub →</a>
+    </div>
+
+    <div class="hero-metrics">
+      <div class="metric">
+        <span class="metric-value" data-count="4">4</span>
+        <span class="metric-label">Apps Built</span>
+      </div>
+      <div class="metric-divider"></div>
+      <div class="metric">
+        <span class="metric-value" data-count="50">50</span>
+        <span class="metric-label">Features Shipped</span>
+      </div>
+      <div class="metric-divider"></div>
+      <div class="metric">
+        <span class="metric-value" data-count="15">15</span>
+        <span class="metric-label">AI Modules</span>
+      </div>
+      <div class="metric-divider"></div>
+      <div class="metric">
+        <span class="metric-value" data-count="3">3</span>
+        <span class="metric-label">Tech Stacks</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator"><div class="scroll-line"></div></div>
+</section>
+
+<!-- ══ ABOUT ══ -->
+<section id="about">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <span class="section-label">About me</span>
+    </div>
+
+    <div class="about-layout">
+      <div class="about-left">
+        <h2>Developer. Builder.<br/><span style="color:var(--accent)">Shipped to production.</span></h2>
+        <p>
+          I'm a frontend-focused full-stack developer based in Munich, currently pursuing a
+          <strong>M.Sc. in Big Data & Business Analytics</strong> at FOM Hochschule. I have a B.Sc. in
+          Information Technology from SIES College, Mumbai, and professional experience from a
+          web development internship at Skolar.
+        </p>
+        <p>
+          My main project is <strong>CrownDesk</strong> — a 4-app ecosystem I designed, built, and
+          deployed entirely solo. The frontend for MediNest is a full <strong>React + TypeScript + Next.js</strong>
+          app; the others use Flask/Jinja2. Every app is deployed via GitHub with <strong>Render CI/CD</strong>
+          auto-deploying on every push to main.
+        </p>
+        <p>
+          Originally from Mumbai, now building things in Munich. I care about clean code,
+          type-safe components, fast UIs, and shipping features that real users interact with.
+        </p>
+        <div class="about-tags">
+          <span class="tag-highlight">⚛️ React · Next.js</span>
+          <span class="tag-highlight">🔷 TypeScript</span>
+          <span class="tag-highlight">🐍 Python · Flask</span>
+          <span class="tag-highlight">⚡ FastAPI</span>
+          <span class="tag-highlight">🔁 GitHub · CI/CD</span>
+          <span class="tag-highlight">🐳 Docker</span>
+          <span class="tag-highlight">🤖 Claude AI</span>
+          <span class="tag-highlight">📐 Clean architecture</span>
+          <span class="tag-highlight">🌍 Munich-based</span>
+          <span class="tag-highlight">⚖️ GDPR conscious</span>
+        </div>
+      </div>
+
+      <div class="about-right">
+        <div class="terminal-card">
+          <div class="terminal-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="terminal-body">
+            <div><span class="t-prompt">$ </span><span class="t-cmd">whoami</span></div>
+            <div class="t-output">Shreyas Nandi — Frontend &amp; Full-Stack Developer</div>
+            <br/>
+            <div><span class="t-prompt">$ </span><span class="t-cmd">cat location.txt</span></div>
+            <div class="t-output">München, Deutschland 🇩🇪</div>
+            <br/>
+            <div><span class="t-prompt">$ </span><span class="t-cmd">cat education.txt</span></div>
+            <div class="t-output">M.Sc. Big Data &amp; Business Analytics</div>
+            <div class="t-output">FOM Hochschule München · 2025 – present</div>
+            <div class="t-output">B.Sc. IT · SIES College Mumbai · 2022–25</div>
+            <br/>
+            <div><span class="t-prompt">$ </span><span class="t-cmd">cat experience.txt</span></div>
+            <div class="t-output">Web Dev Intern · Skolar · Nov 2023–Feb 2024</div>
+            <br/>
+            <div><span class="t-prompt">$ </span><span class="t-cmd">npm run status</span></div>
+            <div class="t-success">✓ Open to working student roles</div>
+            <div class="t-success">✓ Available in München</div>
+            <div class="t-success">✓ React · TypeScript · Next.js ready<span class="t-cursor">▌</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROJECTS ══ -->
+<section id="projects" class="project-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-num">02</span>
+      <span class="section-label">Projects</span>
+    </div>
+    <h2 class="section-title">Things I've built</h2>
+    <p class="section-desc">
+      Four production-grade web apps built solo under the CrownDesk ecosystem — each independently deployed,
+      with shared GitHub CI/CD and a reverse-proxy hub routing traffic under one domain.
+    </p>
+
+    <!-- MediNest — most relevant for frontend roles -->
+    <div class="project-showcase" style="--proj-glow:rgba(78,205,196,.06); margin-bottom:2rem;">
+      <div class="project-showcase-header">
+        <div class="project-badge-row">
+          <span class="project-status-badge">Featured · React + TypeScript</span>
+        </div>
+        <div class="project-title-row">
+          <span class="project-icon-lg">🏥</span>
+          <div>
+            <h2>MediNest</h2>
+            <p class="project-tagline">AI-powered medical learning platform · FastAPI + React + Next.js + TypeScript</p>
+          </div>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-description">
+          <p>
+            The most technically ambitious app in the ecosystem. The frontend is a <strong>React + TypeScript + Next.js</strong>
+            application styled with Tailwind CSS — component-driven, fully type-safe, and deployed via GitHub to Render.
+            The backend is a <strong>FastAPI</strong> service with PostgreSQL, containerised with Docker.
+          </p>
+          <p style="margin-top:.75rem">
+            Integrates <strong>Claude AI</strong> (medical assistant), <strong>DeepL</strong> (multilingual support),
+            <strong>PubMed API</strong> (research lookup), and a custom <strong>Three.js 3D anatomy explorer</strong>.
+          </p>
+        </div>
+        <div class="features-grid features-grid-3">
+          <div class="feature-item">
+            <span class="feature-icon">⚛️</span>
+            <div><h5>React + TypeScript</h5><p>Type-safe component architecture with Next.js App Router</p></div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">🤖</span>
+            <div><h5>Crown AI (Claude)</h5><p>Medical assistant with guardrailed clinical context</p></div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">🧠</span>
+            <div><h5>3D Anatomy Explorer</h5><p>Interactive Three.js anatomical models</p></div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">💊</span>
+            <div><h5>Drug Interaction Checker</h5><p>Cross-country drug lookup with analysis</p></div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">🏥</span>
+            <div><h5>Clinical Case Simulator</h5><p>AI-generated patient cases with diagnostic scoring</p></div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">🐳</span>
+            <div><h5>Docker + CI/CD</h5><p>Containerised — GitHub push triggers auto-deploy to Render</p></div>
+          </div>
+        </div>
+        <div class="project-stack">
+          <span>React</span><span>TypeScript</span><span>Next.js</span><span>Tailwind CSS</span>
+          <span>FastAPI</span><span>PostgreSQL</span><span>Docker</span>
+          <span>Claude AI</span><span>Three.js</span><span>DeepL API</span><span>PubMed API</span>
+        </div>
+        <div class="project-cta">
+          <a href="https://github.com/crowndesk01-cmyk" target="_blank" rel="noopener" class="btn btn-primary" style="--btn-color:#2CA58D;--btn-glow:rgba(78,205,196,.35)">
+            View on GitHub →
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- JobDesk -->
+    <div class="project-showcase" style="--proj-glow:rgba(0,212,255,.06); margin-bottom:2rem;">
+      <div class="project-showcase-header" style="background:linear-gradient(135deg,rgba(0,0,0,.2),rgba(0,212,255,.06))">
+        <div class="project-badge-row">
+          <span class="project-status-badge" style="color:#67e8f9;border-color:rgba(6,182,212,.3);background:rgba(6,182,212,.1)">Analytics Dashboard · Flask</span>
+        </div>
+        <div class="project-title-row">
+          <span class="project-icon-lg">💼</span>
+          <div>
+            <h2>JobDesk</h2>
+            <p class="project-tagline">Career intelligence platform for international students · Python Flask + Chart.js</p>
+          </div>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-description">
+          <p>
+            A full job-tracking and career analytics workspace built for international students navigating German visa
+            constraints and dual-language applications. Features a <strong>16-KPI analytics dashboard</strong> with
+            10 interactive <strong>Chart.js</strong> charts and a real-time career score (0–100).
+          </p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-item">
+            <span class="feature-icon">📊</span>
+            <div><h5>16-KPI Dashboard</h5><p>Chart.js with real-time career scoring and trend analysis</p></div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">🧠</span>
+            <div><h5>Recommendation Engine</h5><p>9 rule-based suggestions tailored to your application data</p></div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">📧</span>
+            <div><h5>Email Generator</h5><p>5 email types × 3 tones (formal, friendly, short)</p></div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">📁</span>
+            <div><h5>Full CRUD Tracker</h5><p>25+ fields per application, CSV import/export, doc vault</p></div>
+          </div>
+        </div>
+        <div class="project-stack">
+          <span>Python Flask</span><span>SQLAlchemy</span><span>Chart.js</span>
+          <span>Bootstrap 5</span><span>Pandas</span><span>SQLite</span><span>Jinja2</span>
+        </div>
+        <div class="project-cta">
+          <a href="https://github.com/crowndesk01-cmyk" target="_blank" rel="noopener" class="btn btn-primary" style="--btn-color:#0e7490;--btn-glow:rgba(6,182,212,.35)">
+            View on GitHub →
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nexora -->
+    <div class="project-showcase" style="--proj-glow:rgba(124,58,237,.06); margin-bottom:2rem;">
+      <div class="project-showcase-header" style="background:linear-gradient(135deg,rgba(0,0,0,.2),rgba(124,58,237,.08))">
+        <div class="project-badge-row">
+          <span class="project-status-badge" style="color:#c4b5fd;border-color:rgba(124,58,237,.3);background:rgba(124,58,237,.1)">Social Platform · OAuth + AI</span>
+        </div>
+        <div class="project-title-row">
+          <span class="project-icon-lg">🌐</span>
+          <div>
+            <h2>Nexora</h2>
+            <p class="project-tagline">Social networking platform for international students · Flask + OAuth + Claude AI</p>
+          </div>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-description">
+          <p>
+            A community platform built for international students in Germany — with communities, events,
+            direct messaging, stories, geolocation map, and an <strong>AI life coach</strong> powered by
+            Groq + Claude. Includes <strong>Google OAuth</strong>, <strong>GitHub OAuth</strong>, OTP
+            email verification, and GDPR-compliant age-gating.
+          </p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-item">
+            <span class="feature-icon">🤝</span>
+            <div><h5>Community Discovery</h5><p>Find communities by university, city, nationality, and interests</p></div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">🤖</span>
+            <div><h5>AI Life Coach</h5><p>Groq + Claude for visa questions, culture shock, academic stress</p></div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">🔐</span>
+            <div><h5>OAuth + OTP Auth</h5><p>Google / GitHub OAuth, email OTP, per-IP rate limiting</p></div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">🗺️</span>
+            <div><h5>Interactive Map</h5><p>Geolocation map of communities and events across German cities</p></div>
+          </div>
+        </div>
+        <div class="project-stack">
+          <span>Python Flask</span><span>SQLAlchemy</span><span>Anthropic Claude</span>
+          <span>Groq AI</span><span>Google OAuth</span><span>GitHub OAuth</span>
+          <span>Geolocation</span><span>SQLite</span>
+        </div>
+        <div class="project-cta">
+          <a href="https://github.com/crowndesk01-cmyk" target="_blank" rel="noopener" class="btn btn-primary" style="--btn-color:#6d28d9;--btn-glow:rgba(124,58,237,.35)">
+            View on GitHub →
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CrownDesk Hub -->
+    <div class="project-showcase" style="--proj-glow:rgba(245,200,66,.04);">
+      <div class="project-showcase-header" style="background:linear-gradient(135deg,rgba(0,0,0,.2),rgba(245,200,66,.05))">
+        <div class="project-badge-row">
+          <span class="project-status-badge" style="color:#fcd34d;border-color:rgba(245,200,66,.3);background:rgba(245,200,66,.1)">Micro-Frontend Gateway · Flask Proxy</span>
+        </div>
+        <div class="project-title-row">
+          <span class="project-icon-lg">👑</span>
+          <div>
+            <h2>CrownDesk Hub</h2>
+            <p class="project-tagline">Reverse-proxy gateway + super-admin panel for the full ecosystem</p>
+          </div>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-description">
+          <p>
+            The command-centre that ties all four apps together. A <strong>Flask reverse-proxy</strong> routing
+            <code style="color:var(--accent);font-family:var(--mono)">/jobdesk</code>,
+            <code style="color:var(--accent);font-family:var(--mono)">/nexora</code>,
+            <code style="color:var(--accent);font-family:var(--mono)">/medinest</code> to their respective
+            services under one domain — architecturally equivalent to a <strong>micro-frontend shell</strong>.
+            Includes a unified super-admin panel, CSRF middleware, live service health checks, and a
+            <strong>Free Beta Mode</strong> feature flag for launch gating without code changes.
+          </p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-item">
+            <span class="feature-icon">🔀</span>
+            <div><h5>Smart Reverse Proxy</h5><p>Routes all sub-app traffic transparently under one domain</p></div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">🛡️</span>
+            <div><h5>CSRF + Auth</h5><p>Ecosystem-wide CSRF middleware with per-service exemptions</p></div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">📡</span>
+            <div><h5>Live Health Checks</h5><p>Continuous service status polling shown to users &amp; admins</p></div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">🚩</span>
+            <div><h5>Feature Flags</h5><p>Payment gating, beta mode, per-app availability via env vars</p></div>
+          </div>
+        </div>
+        <div class="project-stack">
+          <span>Python Flask</span><span>Reverse Proxy</span><span>CSRF Middleware</span>
+          <span>Feature Flags</span><span>Docker</span><span>Render CI/CD</span>
+        </div>
+        <div class="project-cta">
+          <a href="https://github.com/crowndesk01-cmyk" target="_blank" rel="noopener" class="btn btn-primary" style="--btn-color:#b45309;--btn-glow:rgba(245,200,66,.3)">
+            View on GitHub →
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ SKILLS ══ -->
+<section id="skills">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-num">03</span>
+      <span class="section-label">Skills</span>
+    </div>
+    <h2 class="section-title">Tech I work with</h2>
+    <p class="section-desc">
+      A pragmatic stack built through shipping real products — not tutorials.
+    </p>
+
+    <div class="skills-columns">
+      <div class="skill-col">
+        <h4>Frontend</h4>
+        <div class="skill-items">
+          <div class="skill-item"><span class="skill-dot" style="--dot-color:#61dafb"></span>React</div>
+          <div class="skill-item"><span class="skill-dot" style="--dot-color:#3178c6"></span>TypeScript</div>
+          <div class="skill-item"><span class="skill-dot" style="--dot-color:#000"></span>Next.js</div>
+          <div class="skill-item"><span class="skill-dot" style="--dot-color:#38bdf8"></span>Tailwind CSS</div>
+          <div class="skill-item"><span class="skill-dot" style="--dot-color:#e34c26"></span>HTML · CSS</div>
+          <div class="skill-item"><span class="skill-dot" style="--dot-color:#f7df1e"></span>JavaScript</div>
+          <div class="skill-item"><span class="skill-dot" style="--dot-color:#ff6384"></span>Chart.js</div>
+          <div class="skill-item"><span class="skill-dot" style="--dot-color:#049ef4"></span>Three.js</div>
+        </div>
+      </div>
+      <div class="skill-col">
+        <h4>Backend</h4>
+        <div class="skill-items">
+          <div class="skill-item"><span class="skill-dot" style="--dot-color:#3776ab"></span>Python</div>
+          <div class="skill-item"><span class="skill-dot" style="--dot-color:#000"></span>Flask</div>
+          <div class="skill-item"><span class="skill-dot" style="--dot-color:#009688"></span>FastAPI</div>
+          <div class="skill-item"><span class="skill-dot" style="--dot-color:#d71f00"></span>SQLAlchemy</div>
+          <div class="skill-item"><span class="skill-dot" style="--dot-color:#e8a838"></span>Jinja2</div>
+          <div class="skill-item"><span class="skill-dot" style="--dot-color:#4695d2"></span>REST APIs</div>
+        </div>
+      </div>
+      <div class="skill-col">
+        <h4>Data &amp; AI</h4>
+        <div class="skill-items">
+          <div class="skill-item"><span class="skill-dot" style="--dot-color:#336791"></span>PostgreSQL</div>
+          <div class="skill-item"><span class="skill-dot" style="--dot-color:#003b57"></span>SQLite</div>
+          <div class="skill-item"><span class="skill-dot" style="--dot-color:#150458"></span>Pandas</div>
+          <div class="skill-item"><span class="skill-dot" style="--dot-color:#d4a000"></span>Claude AI</div>
+          <div class="skill-item"><span class="skill-dot" style="--dot-color:#f55036"></span>Groq AI</div>
+          <div class="skill-item"><span class="skill-dot" style="--dot-color:#0091ff"></span>DeepL API</div>
+        </div>
+      </div>
+      <div class="skill-col">
+        <h4>Tools &amp; Infra</h4>
+        <div class="skill-items">
+          <div class="skill-item"><span class="skill-dot" style="--dot-color:#f05033"></span>Git · GitHub</div>
+          <div class="skill-item"><span class="skill-dot" style="--dot-color:#46a2f1"></span>CI/CD (Render)</div>
+          <div class="skill-item"><span class="skill-dot" style="--dot-color:#0db7ed"></span>Docker</div>
+          <div class="skill-item"><span class="skill-dot" style="--dot-color:#4285f4"></span>Google OAuth</div>
+          <div class="skill-item"><span class="skill-dot" style="--dot-color:#333"></span>JWT · OTP Auth</div>
+          <div class="skill-item"><span class="skill-dot" style="--dot-color:#22c55e"></span>CSRF · Rate Limit</div>
+          <div class="skill-item"><span class="skill-dot" style="--dot-color:#f59e0b"></span>Java · C · C++</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT ══ -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-num">04</span>
+      <span class="section-label">Contact</span>
+    </div>
+
+    <div class="contact-layout">
+      <div class="contact-left">
+        <h2>Let's work<br/><span style="color:var(--accent)">together.</span></h2>
+        <p>
+          I'm actively looking for <strong>working student</strong> and internship opportunities in
+          <strong>frontend / full-stack engineering</strong> in Munich.
+          Happy to chat about React, TypeScript, anything web-related, or just say hi.
+        </p>
+        <div style="margin-top:1.5rem">
+          <a href="https://crowndesk01-cmyk.github.io/portfolio/" target="_blank" rel="noopener" class="btn btn-glass" style="display:inline-flex;margin-right:.75rem;margin-bottom:.75rem">
+            CrownDesk Portfolio →
+          </a>
+          <a href="https://github.com/crowndesk01-cmyk" target="_blank" rel="noopener" class="btn btn-glass" style="display:inline-flex;margin-bottom:.75rem">
+            GitHub →
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-right">
+        <a href="mailto:shreyasnandi04@gmail.com" class="contact-row">
+          <span class="contact-row-icon">✉️</span>
+          <div>
+            <h4>Email</h4>
+            <p>shreyasnandi04@gmail.com</p>
+          </div>
+          <span class="contact-arrow">→</span>
+        </a>
+        <a href="https://github.com/crowndesk01-cmyk" target="_blank" rel="noopener" class="contact-row">
+          <span class="contact-row-icon">💻</span>
+          <div>
+            <h4>GitHub</h4>
+            <p>github.com/crowndesk01-cmyk</p>
+          </div>
+          <span class="contact-arrow">→</span>
+        </a>
+        <div class="contact-row">
+          <span class="contact-row-icon">📍</span>
+          <div>
+            <h4>Location</h4>
+            <p>München, Deutschland</p>
+          </div>
+          <span class="contact-arrow">→</span>
+        </div>
+        <div class="contact-row">
+          <span class="contact-row-icon">🎓</span>
+          <div>
+            <h4>Education</h4>
+            <p>M.Sc. Big Data · FOM Hochschule · 2025–present</p>
+          </div>
+          <span class="contact-arrow">→</span>
+        </div>
+        <div class="contact-row">
+          <span class="contact-row-icon">🟢</span>
+          <div>
+            <h4>Status</h4>
+            <p>Open to working student &amp; internship roles</p>
+          </div>
+          <span class="contact-arrow">→</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <p>© <span id="yr"></span> <strong>Shreyas Nandi</strong> · Built with HTML, CSS &amp; JS</p>
+      <div class="footer-links">
+        <a href="mailto:shreyasnandi04@gmail.com">Email</a>
+        <a href="https://github.com/crowndesk01-cmyk" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://crowndesk01-cmyk.github.io/portfolio/" target="_blank">CrownDesk Portfolio</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
